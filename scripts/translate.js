@@ -3,7 +3,7 @@ const path = require('path');
 const axios = require('axios');
 
 const sourceLang = 'en';
-const targetLangs = ['es', 'de', 'nl', 'ko', 'ja', 'it', 'pt', 'ru', 'zh'];
+const targetLangs = ['es', 'de', 'nl', 'ko', 'ja', 'it', 'pt', 'ru', 'zh','fr'];
 const docsDir = 'docs';
 
 async function translate(text, targetLang) {
