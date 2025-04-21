@@ -1,9 +1,9 @@
 root: ./en
+
 structure:
   readme: README.md
   summary: SUMMARY.md
-  languages:
-    - en
+
 variants:
   fr: ./fr
   es: ./es
@@ -15,5 +15,6 @@ variants:
   pt: ./pt
   ru: ./ru
   zh: ./zh
+
 redirects:
   previous/page: new/page 
