@@ -26,31 +26,23 @@ plugins:
 structure:
   langs:
     - en
-    - fr
-    - es
-    - ar
-    - it
-    - ja
 
-languages:
-  en:
-    name: English
-    code: en
+variants:
   fr:
     name: Français
-    code: fr
+    path: fr
   es:
     name: Español
-    code: es
+    path: es
   ar:
     name: العربية
-    code: ar
+    path: ar
   it:
     name: Italiano
-    code: it
+    path: it
   ja:
     name: 日本語
-    code: ja
+    path: ja
 
 ignorePatterns:
   - "temp_*"
