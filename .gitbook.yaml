@@ -1,6 +1,8 @@
-root: ./
+root: ./en
 structure:
   readme: README.md
   summary: SUMMARY.md
+  languages:
+    - en
 redirects:
   previous/page: new/page 
