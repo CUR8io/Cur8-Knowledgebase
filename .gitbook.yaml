@@ -1,20 +1,29 @@
-root: ./en
-
+root: ./
 structure:
-  readme: README.md
-  summary: SUMMARY.md
+  readme: ./en/README.md
+  summary: ./en/SUMMARY.md
 
 variants:
-  fr: ./fr
-  es: ./es
-  ar: ./ar
-  it: ./it
-  ja: ./ja
-  nl: ./nl
-  ko: ./ko
-  pt: ./pt
-  ru: ./ru
-  zh: ./zh
+  fr:
+    root: ./fr
+  es:
+    root: ./es
+  ar:
+    root: ./ar
+  it:
+    root: ./it
+  ja:
+    root: ./ja
+  nl:
+    root: ./nl
+  ko:
+    root: ./ko
+  pt:
+    root: ./pt
+  ru:
+    root: ./ru
+  zh:
+    root: ./zh
 
 redirects:
   previous/page: new/page 
