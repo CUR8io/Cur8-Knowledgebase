@@ -1,0 +1,33 @@
+---
+git-sync:
+  enabled: true
+  branch: feature/gitbook-integration
+  message-prefix: "[GitBook]"
+  message-suffix: ""
+  protected-files:
+    - "en/**/*.md"
+    - ".env"
+    - "*.key"
+    - "api-keys.json"
+
+theme:
+  color: "#3884FF"
+  page-backgrounds: true
+  layout:
+    hideSidebar: false
+    hideNavbar: false
+    hideSummary: false
+
+plugins:
+  - search
+  - hints
+  - code-blocks
+
+structure:
+  langs:
+    - en
+
+ignorePatterns:
+  - "!en/"
+  - "temp_*"
+  - "*.log" 

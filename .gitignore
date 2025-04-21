@@ -35,3 +35,21 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# GitBook specific #
+###################
+.gitbook/cache/
+.gitbook/build/
+node_modules/
+_book/
+*.env
+*.key
+api-keys.json
+.env.*
+!.env.example
+
+# Temporary files #
+##################
+temp_*
+*.tmp
+*.temp
