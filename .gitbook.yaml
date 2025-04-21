@@ -10,5 +10,10 @@ variants:
   ar: ./ar
   it: ./it
   ja: ./ja
+  nl: ./nl
+  ko: ./ko
+  pt: ./pt
+  ru: ./ru
+  zh: ./zh
 redirects:
   previous/page: new/page 
