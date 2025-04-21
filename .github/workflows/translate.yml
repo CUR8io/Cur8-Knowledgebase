@@ -1,0 +1,59 @@
+# This is a basic workflow to help you get started with Actions
+name: GitBook Translation Sync
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+    inputs:
+      source_space_id:
+        description: 'Source GitBook Space ID'
+        required: false
+      target_languages:
+        description: 'Comma-separated list of target languages (e.g., fr,es,de)'
+        required: false
+        default: 'fr,es,de,it,pt,nl,pl,ru,ja,ko,zh'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install axios @gitbook/api
+          
+      - name: Run translation script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITBOOK_TOKEN: ${{ secrets.GITBOOK_TOKEN }}
+          GITBOOK_SOURCE_SPACE_ID: ${{ github.event.inputs.source_space_id || secrets.GITBOOK_SOURCE_SPACE_ID }}
+          GITBOOK_TARGET_SPACES: ${{ github.event.inputs.target_languages || secrets.GITBOOK_TARGET_SPACES }}
+        run: node .github/scripts/translate.js
+        
+      - name: Upload translation logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: translation-logs
+          path: translation.log
+          
+      - name: Create Pull Request for translations
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: Update translations"
+          title: "Update translations"
+          body: "Automated translation updates from GitBook"
+          branch: "translation-updates"
+          base: "main" 
