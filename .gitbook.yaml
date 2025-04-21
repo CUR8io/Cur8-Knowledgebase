@@ -1,8 +1,20 @@
-root: ./en
+root: ./
 structure:
   readme: README.md
   summary: SUMMARY.md
   languages:
     - en
+    - fr
+    - es
+    - ar
+    - it
+    - ja
+  paths:
+    en: en/
+    fr: fr/
+    es: es/
+    ar: ar/
+    it: it/
+    ja: ja/
 redirects:
   previous/page: new/page 

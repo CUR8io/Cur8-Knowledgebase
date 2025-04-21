@@ -5,7 +5,7 @@ git-sync:
   message-prefix: "[GitBook]"
   message-suffix: ""
   protected-files:
-    - "en/**/*.md"
+    - "**/*.md"
     - ".env"
     - "*.key"
     - "api-keys.json"
@@ -26,8 +26,32 @@ plugins:
 structure:
   langs:
     - en
+    - fr
+    - es
+    - ar
+    - it
+    - ja
+
+languages:
+  en:
+    name: English
+    code: en
+  fr:
+    name: Français
+    code: fr
+  es:
+    name: Español
+    code: es
+  ar:
+    name: العربية
+    code: ar
+  it:
+    name: Italiano
+    code: it
+  ja:
+    name: 日本語
+    code: ja
 
 ignorePatterns:
-  - "!en/"
   - "temp_*"
   - "*.log" 
