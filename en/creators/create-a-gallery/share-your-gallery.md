@@ -3,15 +3,14 @@
 CUR8 makes it incredibly easy for creators to share out and promote every one of their pieces in a public gallery to their followers and potential new collectors on X.
 
 Create multi-media rich content for your feed and promote your art using CUR8's auto-generated post or detailed thread share feature with a single click!\
-&#x20;
+
 
 <figure><img src="../../.gitbook/assets/Untitled design.gif" alt=""><figcaption></figcaption></figure>
 
 ### Auto-Generated Post
 
 \
-The generated content automatically includes the following information in an X post:\
-
+The generated content automatically includes the following information in an X post:\\
 
 * Gallery name
 * Creator name
@@ -22,8 +21,7 @@ The generated content automatically includes the following information in an X p
 ### Auto-Generated Thread
 
 \
-The generated content automatically includes the following information in an X thread:\
-
+The generated content automatically includes the following information in an X thread:\\
 
 * Gallery name
 * Creator name
@@ -36,7 +34,7 @@ The generated content automatically includes the following information in an X t
 * Collection name
 * Collection description
 * Number of pieces in collection and blockchain
-* Number of owners&#x20;
+* Number of owners
 * Marketplace links for each piece
 
 ### Share/Edit/Delete A Gallery
@@ -44,7 +42,7 @@ The generated content automatically includes the following information in an X t
 \
 If you wish to share/edit/delete a gallery, navigate to your 'Creator Profile’:
 
-1. Hover over your gallery to share them with your followers by clicking the <img src="../../.gitbook/assets/Screenshot 2024-07-10 at 15.26.24.png" alt="" data-size="line">icon and select 'Preview X Post'.&#x20;
+1. Hover over your gallery to share them with your followers by clicking the <img src="../../.gitbook/assets/Screenshot 2024-07-10 at 15.26.24.png" alt="" data-size="line">icon and select 'Preview X Post'.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-04-02 at 10.21.41.png" alt="" width="315"><figcaption></figcaption></figure>
 
